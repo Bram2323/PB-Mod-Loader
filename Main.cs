@@ -23,7 +23,7 @@ namespace Polybridge_2_Mod_Loader
         public string CurrentDownloadName = "";
         public string PTFName = "";
 
-        public const string GoogleSheetID = "<Google Sheet Id Here>";
+        public const string GoogleSheetID = "<Google Sheet ID Here>";
         public const string GoogleAPIToken = "<Google API Token Here>";
 
         public const string ModLoaderLink = "https://api.github.com/repos/Bram2323/PB-Mod-Loader/releases/latest";
@@ -69,7 +69,7 @@ namespace Polybridge_2_Mod_Loader
                     DialogResult dialogResult = MessageBox.Show("A new version of the mod loader is available!\nDownload new version?", "New version available!", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        OpenUrl(response.assets_url);
+                        OpenUrl(response.html_url);
                     }
                 }
             }
